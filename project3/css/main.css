@@ -1,3 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@100;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap'); */
+
 body {
-    color: Magenta;
+  background-color: #262626;
+}
+
+li, a, button, h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: black;
+}
+
+.logo {
+  cursor: default;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-family: "Gloria Hallelujah", sans-serif;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: rgb(135, 121, 106);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(135, 121, 106);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+
+button:hover {
+  background-color: rgba(135, 121, 106, 0.8);
 }
