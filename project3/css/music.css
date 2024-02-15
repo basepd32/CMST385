@@ -1,0 +1,33 @@
+#flex-container-music {
+  max-width: 1366px;
+  height: auto;
+  margin: 100px auto;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 32px;
+}
+
+#colour, #promise, #wish, #beside {
+  border-radius: 12px;
+  padding: 8px;
+  display: grid;
+}
+
+p {
+  padding: 5%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Gloria Hallelujah", sans-serif;
+  font-size: 2em;
+  margin: 5% 35%;
+  color: rgb(135, 121, 106);
+}

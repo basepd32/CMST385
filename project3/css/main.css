@@ -5,18 +5,20 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@100;400;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap'); */
 
 body {
   background-color: #262626;
+  color: white;
 }
 
 li, a, button, h1 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1em;
-  color: white;
   text-decoration: none;
+}
+
+li, a, button {
+  font-size: 1em;
 }
 
 header {
@@ -46,6 +48,10 @@ header {
 
 .nav-links a {
   transition: all 0.3s ease 0s;
+}
+
+a:visited {
+  color: white;
 }
 
 .nav-links li a:hover {
