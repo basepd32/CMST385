@@ -1,0 +1,174 @@
+/* homepage image slider */
+
+.carousel-container {
+  width: 100%;
+}
+
+#slider {
+  overflow: hidden;
+  height: 100%;
+  max-height: 450px;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+  height: 100%;
+  transform: translateY(-25%);
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* homepage header */
+
+header {
+  margin:  3.5em auto;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+.heading-line {
+  border: none;
+  border-radius: 1rem;
+  height: 8px;
+  width: 80%;
+  margin: 1.5rem auto 4rem auto;
+  background: #26a350;
+  filter: drop-shadow(0px 3.5px 5px #26a350);
+
+}
+
+/* home content info */
+
+.header-container {
+  padding: .25em;
+}
+
+.welcome-subhead {
+  padding: .5em;
+  min-width: 30%;
+  text-align: left;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 2em auto;
+  flex: 1 2 100%;
+}
+
+.welcome-info {
+  padding: .5em;
+  margin: 4em auto;
+  min-width: 20%;
+  text-align: left;
+  flex: 1 0 30%;
+}
+
+.welcome-info p {
+  font-size: 1em;
+  margin: 2em auto;
+}
+
+/* welcome styling for small screens */
+
+@media screen and (max-width: 650px) {
+  .welcome-content {
+    align-items: center;
+  }
+  .welcome-subhead {
+    text-align: center;
+    margin: 1em auto;
+  }
+  .welcome-info {
+    text-align: center;
+    margin: 1em auto;
+  }
+  
+  #slider figure img {
+    transform: translateY(0%);
+  }
+}
+
+/* welcome button */
+
+.welcome-btn {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.25em;
+  color: #ffffff;
+  background-color: hsl(140, 62%, 39%);
+  padding: 2em 12em 2em 12em;
+  margin: 4em 2em;
+  text-decoration: none;
+  flex: 1 0 31%;
+}
+
+.welcome-btn:hover {
+  background-color: hsl(140, 62%, 45%);
+  cursor: pointer;
+
+}
+
+.btn-container {
+  margin-bottom: 4em;
+}
+
+/* button styling for small screens */
+
+@media screen and (max-width: 768px) {
+  .btn-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .welcome-btn {
+    padding: 2em 5em 2em 5em;
+  }
+}

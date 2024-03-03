@@ -1,0 +1,102 @@
+.wrapper {
+  width: min(1200px, 100% - 3rem);
+  margin: 4em auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: hsl(0, 0%, 20%);
+  padding: 1rem;
+}
+ 
+caption,
+td,
+th {
+  padding: 1rem;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+caption {
+  border-bottom: 2px solid var(--main-green);
+  background: hsl(0 0% 0%);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+td a {
+  text-decoration: none;
+  color: white;
+}
+
+td a:visited {
+  color: white;
+}
+
+td a:hover {
+  color: var(--main-green);
+}
+
+th {
+  background: hsl(0 0% 0% / 0.5);
+}
+
+tr:nth-of-type(2n) {
+  background: hsl(0 0% 0% / 0.1);
+}
+
+/* table styles for small screens */
+
+@media (max-width: 650px) {
+   th {
+    display: none;
+   }
+
+   td:first-child {
+    padding-top: 2rem;
+   }
+
+   td:last-child {
+    padding-bottom: 2rem;
+   }
+   
+   td {
+    display: block;
+    padding: .75rem 1rem;
+   }
+
+   td::before {
+    content: attr(data-cell) ": ";
+    font-weight: 700;
+    text-transform: capitalize;
+   }
+}
+
+.instructions {
+  padding: 1rem;
+  text-align: left;
+}
+
+.instructions-bold {
+  font-weight: 700;
+}
+
+.instructions p {
+  padding-block: 2rem;
+}
+
+li {
+  list-style-position: inside;
+  padding-inline-start: 0;
+}
+
+#closing {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}
